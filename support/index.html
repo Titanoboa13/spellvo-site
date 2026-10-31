@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="tr" data-title-tr="Destek · SpellVo" data-title-en="Support · SpellVo">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#07051a" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" hreflang="tr" href="https://spellvo.app/support/?lang=tr" />
+    <link rel="alternate" hreflang="en" href="https://spellvo.app/support/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://spellvo.app/support/" />
+    <script>
+      // The page's language before the first paint (site/src/site.ts): ?lang=, the visitor's choice, the browser.
+      (function () {
+        var d = document.documentElement, q = new URLSearchParams(location.search).get('lang'), s = null;
+        try { s = localStorage.getItem('spellvo.site.lang'); } catch (e) {}
+        var l = q === 'tr' || q === 'en' ? q : s === 'tr' || s === 'en' ? s : /^tr/i.test(navigator.language || '') ? 'tr' : 'en';
+        d.lang = l;
+        d.setAttribute('data-lang', l);
+        var t = d.getAttribute('data-title-' + l);
+        if (t) document.title = t;
+      })();
+    </script>
+    <!-- The first paint: the loading screen's sky, never a white page. -->
+    <style>
+      html, body { background: #07051a; color: #fff; }
+    </style>
+    <title>Destek · Support · SpellVo</title>
+    <meta name="description" content="SpellVo destek: sık sorulan sorular ve iletişim. · SpellVo support: frequently asked questions and contact." />
+    <link rel="canonical" href="https://spellvo.app/support/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SpellVo" />
+    <meta property="og:url" content="https://spellvo.app/support/" />
+    <meta property="og:title" content="Destek · Support · SpellVo" />
+    <meta property="og:description" content="Sık sorulan sorular ve iletişim. · Frequently asked questions and contact." />
+    <meta property="og:image" content="https://spellvo.app/og/home-tr.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="/assets/site-BCucl4CJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/site-DWHxZTb1.css">
+  </head>
+  <body>
+    <a class="skip" href="#main"><span lang="tr">İçeriğe geç</span><span lang="en">Skip to content</span></a>
+    <header class="wrap top">
+      <a class="brand" href="/" aria-label="SpellVo"><span class="tile tile--correct" aria-hidden="true">S</span><span class="tile tile--present" aria-hidden="true">p</span><span class="tile " aria-hidden="true">e</span><span class="tile tile--correct" aria-hidden="true">l</span><span class="tile tile--present" aria-hidden="true">l</span><span class="tile " aria-hidden="true">V</span><span class="tile tile--correct" aria-hidden="true">o</span></a>
+      <nav class="top__links" aria-label="SpellVo">
+        <a class="top__link" href="/support/"><span lang="tr">Destek</span><span lang="en">Support</span></a>
+        <a class="top__link" href="/privacy/"><span lang="tr">Gizlilik</span><span lang="en">Privacy</span></a>
+        <div class="langs" role="group" aria-label="Dil / Language">
+          <button type="button" data-set-lang="tr" aria-pressed="false" title="Türkçe">TR</button>
+          <button type="button" data-set-lang="en" aria-pressed="false" title="English">EN</button>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="doc faq">
+      <article lang="tr">
+        <h1>Destek</h1>
+        <p class="meta">Sık sorulan sorular. Cevabını bulamazsan bize yaz.</p>
+
+        <details class="card">
+          <summary>SpellVo ücretsiz mi?</summary>
+          <p>Evet, SpellVo ücretsiz oynanır. Mağazada yayımlandığında isteğe bağlı reklamlar ve Altın Pati paketleri olacak; oyunun tamamı satın almadan oynanabilir.</p>
+        </details>
+        <details class="card">
+          <summary>Hesap açmam gerekiyor mu?</summary>
+          <p>Hayır. Hesap yok; ayarların ve ilerlemen yalnızca telefonunda saklanır. Ayrıntılar <a href="/privacy/">gizlilik politikasında</a>.</p>
+        </details>
+        <details class="card">
+          <summary>Telefon değiştirirsem ilerlemem gelir mi?</summary>
+          <p>İlerlemen telefonunda durur; bizim sunucumuzda kopyası yok. Android yedeklemesi açıksa yeni telefonu aynı Google hesabıyla kurduğunda geri gelebilir. Uygulamayı silersen ilerlemen de silinir.</p>
+        </details>
+        <details class="card">
+          <summary>Bir kelimeyi neden kabul etmedi?</summary>
+          <p>SpellVo yalnızca sözlükteki temel biçimleri kabul eder: çekimli hâller (örneğin KİTAPLAR, GELDİ) geçmez. Doğru olduğunu düşündüğün bir kelime kabul edilmediyse ya da uygun bulmadığın bir kelime çıktıysa kelimeyi ve kelime dilini bize yaz.</p>
+        </details>
+        <details class="card">
+          <summary>Meydan okuma bağlantısı açılmıyor.</summary>
+          <p>Bağlantının tamamını gönderdiğinden emin ol: “#” işaretinden sonraki kısım meydan okumanın kendisidir. Bağlantı uygulamanın başka bir sürümünden geliyorsa kelime listeleri farklı olabilir; ikiniz de uygulamayı güncelleyip yeni bir bağlantı gönderin. Her bağlantı bir cihazda ya da tarayıcıda bir kez oynanır.</p>
+        </details>
+        <details class="card">
+          <summary>Uygulamam yok, meydan okumayı oynayabilir miyim?</summary>
+          <p>Evet. Bağlantıyı telefonunun tarayıcısında aç: aynı kelimelerle, aynı sürelerle oynarsın. Sonunda kendi skorunla başka birine meydan okuyabilirsin.</p>
+        </details>
+        <details class="card">
+          <summary>Bildirimleri nasıl kapatırım?</summary>
+          <p>Uygulamada Ayarlar’dan, ya da telefonunun ayarlarından SpellVo’nun bildirimlerini kapatabilirsin.</p>
+        </details>
+        <details class="card">
+          <summary>Bir satın almada sorun yaşadım.</summary>
+          <p>Satın almalar Google Play üzerinden yapılır. Ürün hesabına gelmediyse önce uygulamayı kapatıp yeniden aç; sorun sürerse Google Play sipariş numarasıyla bize yaz. İadeler Google Play’in iade kurallarına göre yapılır.</p>
+        </details>
+
+        <div class="card contact">
+          <h2>Bize yaz</h2>
+          <p>Hata, öneri ya da kelime bildirimi için: telefon modelini ve uygulamanın sürümünü (yükleme ekranının köşesinde) eklersen daha hızlı yardımcı oluruz.</p>
+          <a href="mailto:hello@spellvo.app">hello@spellvo.app</a>
+        </div>
+      </article>
+
+      <article lang="en">
+        <h1>Support</h1>
+        <p class="meta">Frequently asked questions. If yours isn’t here, write to us.</p>
+
+        <details class="card">
+          <summary>Is SpellVo free?</summary>
+          <p>Yes, SpellVo is free to play. Once it is published there will be optional ads and Golden Paw packs; the whole game can be played without buying anything.</p>
+        </details>
+        <details class="card">
+          <summary>Do I need an account?</summary>
+          <p>No. There are no accounts; your settings and progress are stored only on your phone. Details are in the <a href="/privacy/">privacy policy</a>.</p>
+        </details>
+        <details class="card">
+          <summary>Will my progress move to a new phone?</summary>
+          <p>Your progress lives on your phone; there is no copy on a server of ours. If Android backup is on, it may come back when you set up the new phone with the same Google account. Uninstalling the app deletes your progress.</p>
+        </details>
+        <details class="card">
+          <summary>Why wasn’t my word accepted?</summary>
+          <p>SpellVo accepts only dictionary base forms: inflected forms (such as BOOKS or WALKED) don’t count. If a word you think is right wasn’t accepted, or a word came up that you find inappropriate, send us the word and its language.</p>
+        </details>
+        <details class="card">
+          <summary>A challenge link won’t open.</summary>
+          <p>Make sure the whole link was sent: the part after the “#” is the challenge itself. If the link comes from another version of the app, the word lists may differ; both of you update the app and send a new link. Each link can be played once per device or browser.</p>
+        </details>
+        <details class="card">
+          <summary>I don’t have the app. Can I play the challenge?</summary>
+          <p>Yes. Open the link in your phone’s browser: you play the same words with the same timers. At the end you can challenge someone else with your own score.</p>
+        </details>
+        <details class="card">
+          <summary>How do I turn notifications off?</summary>
+          <p>In the app’s Settings, or in your phone’s settings for SpellVo.</p>
+        </details>
+        <details class="card">
+          <summary>I had a problem with a purchase.</summary>
+          <p>Purchases are made through Google Play. If an item didn’t arrive, close and reopen the app first; if it still hasn’t, write to us with your Google Play order number. Refunds follow Google Play’s refund policies.</p>
+        </details>
+
+        <div class="card contact">
+          <h2>Write to us</h2>
+          <p>For bugs, ideas or word reports: adding your phone model and the app version (in the corner of the loading screen) helps us help you faster.</p>
+          <a href="mailto:hello@spellvo.app">hello@spellvo.app</a>
+        </div>
+      </article>
+    </main>
+    <footer class="foot">
+      <div class="wrap">
+        <nav aria-label="SpellVo">
+          <a href="/"><span lang="tr">Ana sayfa</span><span lang="en">Home</span></a>
+          <a href="/support/"><span lang="tr">Destek</span><span lang="en">Support</span></a>
+          <a href="/privacy/"><span lang="tr">Gizlilik politikası</span><span lang="en">Privacy policy</span></a>
+          <a href="/licenses/"><span lang="tr">Lisanslar</span><span lang="en">Licenses</span></a>
+          <a class="mail" href="mailto:hello@spellvo.app">hello@spellvo.app</a>
+        </nav>
+        <p>© 2026 SpellVo. <span lang="tr">Google Play, Google LLC’nin ticari markasıdır.</span><span lang="en">Google Play is a trademark of Google LLC.</span></p>
+      </div>
+    </footer>
+  </body>
+</html>

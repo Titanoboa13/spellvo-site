@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr" data-title-tr="Lisanslar · SpellVo" data-title-en="Licenses · SpellVo">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#07051a" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" hreflang="tr" href="https://spellvo.app/licenses/?lang=tr" />
+    <link rel="alternate" hreflang="en" href="https://spellvo.app/licenses/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://spellvo.app/licenses/" />
+    <script>
+      // The page's language before the first paint (site/src/site.ts): ?lang=, the visitor's choice, the browser.
+      (function () {
+        var d = document.documentElement, q = new URLSearchParams(location.search).get('lang'), s = null;
+        try { s = localStorage.getItem('spellvo.site.lang'); } catch (e) {}
+        var l = q === 'tr' || q === 'en' ? q : s === 'tr' || s === 'en' ? s : /^tr/i.test(navigator.language || '') ? 'tr' : 'en';
+        d.lang = l;
+        d.setAttribute('data-lang', l);
+        var t = d.getAttribute('data-title-' + l);
+        if (t) document.title = t;
+      })();
+    </script>
+    <!-- The first paint: the loading screen's sky, never a white page. -->
+    <style>
+      html, body { background: #07051a; color: #fff; }
+    </style>
+    <title>Lisanslar · Licenses · SpellVo</title>
+    <meta name="description" content="SpellVo’nun kelime listelerinin kaynakları ve lisansları. · The sources and licenses of SpellVo’s word lists." />
+    <link rel="canonical" href="https://spellvo.app/licenses/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SpellVo" />
+    <meta property="og:url" content="https://spellvo.app/licenses/" />
+    <meta property="og:title" content="Lisanslar · Licenses · SpellVo" />
+    <meta property="og:image" content="https://spellvo.app/og/home-tr.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="/assets/site-BCucl4CJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/site-DWHxZTb1.css">
+  </head>
+  <body>
+    <a class="skip" href="#main"><span lang="tr">İçeriğe geç</span><span lang="en">Skip to content</span></a>
+    <header class="wrap top">
+      <a class="brand" href="/" aria-label="SpellVo"><span class="tile tile--correct" aria-hidden="true">S</span><span class="tile tile--present" aria-hidden="true">p</span><span class="tile " aria-hidden="true">e</span><span class="tile tile--correct" aria-hidden="true">l</span><span class="tile tile--present" aria-hidden="true">l</span><span class="tile " aria-hidden="true">V</span><span class="tile tile--correct" aria-hidden="true">o</span></a>
+      <nav class="top__links" aria-label="SpellVo">
+        <a class="top__link" href="/support/"><span lang="tr">Destek</span><span lang="en">Support</span></a>
+        <a class="top__link" href="/privacy/"><span lang="tr">Gizlilik</span><span lang="en">Privacy</span></a>
+        <div class="langs" role="group" aria-label="Dil / Language">
+          <button type="button" data-set-lang="tr" aria-pressed="false" title="Türkçe">TR</button>
+          <button type="button" data-set-lang="en" aria-pressed="false" title="English">EN</button>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="doc">
+      <h1><span lang="tr">Lisanslar</span><span lang="en">Licenses</span></h1>
+      <p class="meta">
+        <span lang="tr">SpellVo’nun kelime listeleri açık kaynaklardan derlenir. Kaynaklar ve lisans metinleri:</span>
+        <span lang="en">SpellVo’s word lists are built from open sources. The sources and their license texts:</span>
+      </p>
+<section class="card licence">
+      <h2><span lang="tr">Türkçe kelimeler</span><span lang="en">Turkish words</span></h2>
+      <p><span lang="tr">Türkçe kelime listesi Zemberek (Apache-2.0) sözlüklerinden üretilmiştir.</span><span lang="en">The Turkish word list is built from the Zemberek dictionaries (Apache-2.0).</span></p>
+      <ul><li><a href="/licenses/hunspell_tr_LICENSE.txt">Hunspell-tr (MIT)</a></li><li><a href="/licenses/zemberek_LICENSE.txt">Zemberek (Apache-2.0)</a></li></ul>
+    </section>
+<section class="card licence">
+      <h2><span lang="tr">İngilizce kelimeler</span><span lang="en">English words</span></h2>
+      <p><span lang="tr">İngilizce kelime listesi Kevin Atkinson’ın ESDB (SCOWL) veritabanı ve WordNet 3.1 (© 2011 Princeton University) kullanılarak üretilmiştir.</span><span lang="en">The English word list is built with Kevin Atkinson’s ESDB (SCOWL) database and WordNet 3.1 (© 2011 Princeton University).</span></p>
+      <ul><li><a href="/licenses/en/esdb_LICENSE.txt">ESDB (SCOWL)</a></li><li><a href="/licenses/en/wordnet_LICENSE.txt">WordNet 3.1</a></li></ul>
+    </section>
+<section class="card licence">
+      <h2>Baloo 2</h2>
+      <p><span lang="tr">Yazı tipi: Baloo 2, Ek Type (SIL Open Font License 1.1).</span><span lang="en">Typeface: Baloo 2 by Ek Type (SIL Open Font License 1.1).</span></p>
+      <ul><li><a href="/licenses/baloo-2_OFL.txt">Baloo 2 (OFL-1.1)</a></li></ul>
+    </section>
+    </main>
+    <footer class="foot">
+      <div class="wrap">
+        <nav aria-label="SpellVo">
+          <a href="/"><span lang="tr">Ana sayfa</span><span lang="en">Home</span></a>
+          <a href="/support/"><span lang="tr">Destek</span><span lang="en">Support</span></a>
+          <a href="/privacy/"><span lang="tr">Gizlilik politikası</span><span lang="en">Privacy policy</span></a>
+          <a href="/licenses/"><span lang="tr">Lisanslar</span><span lang="en">Licenses</span></a>
+          <a class="mail" href="mailto:hello@spellvo.app">hello@spellvo.app</a>
+        </nav>
+        <p>© 2026 SpellVo. <span lang="tr">Google Play, Google LLC’nin ticari markasıdır.</span><span lang="en">Google Play is a trademark of Google LLC.</span></p>
+      </div>
+    </footer>
+  </body>
+</html>

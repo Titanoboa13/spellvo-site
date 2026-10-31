@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="tr" data-title-tr="SpellVo · Kelime yarışması" data-title-en="SpellVo · The word game show">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#07051a" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" hreflang="tr" href="https://spellvo.app/?lang=tr" />
+    <link rel="alternate" hreflang="en" href="https://spellvo.app/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://spellvo.app/" />
+    <script>
+      // The page's language before the first paint (site/src/site.ts): ?lang=, the visitor's choice, the browser.
+      (function () {
+        var d = document.documentElement, q = new URLSearchParams(location.search).get('lang'), s = null;
+        try { s = localStorage.getItem('spellvo.site.lang'); } catch (e) {}
+        var l = q === 'tr' || q === 'en' ? q : s === 'tr' || s === 'en' ? s : /^tr/i.test(navigator.language || '') ? 'tr' : 'en';
+        d.lang = l;
+        d.setAttribute('data-lang', l);
+        var t = d.getAttribute('data-title-' + l);
+        if (t) document.title = t;
+      })();
+    </script>
+    <!-- The first paint: the loading screen's sky, never a white page. -->
+    <style>
+      html, body { background: #07051a; color: #fff; }
+    </style>
+    <title>SpellVo · Kelime yarışması · The word game show</title>
+    <meta name="description" content="SpellVo: tilkinin sunduğu kelime yarışması. İlk harf bizden, gerisi senden. · The word game show hosted by a fox. The first letter is on us, the rest is up to you." />
+    <link rel="canonical" href="https://spellvo.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SpellVo" />
+    <meta property="og:url" content="https://spellvo.app/" />
+    <meta property="og:title" content="SpellVo · Kelime yarışması" />
+    <meta property="og:description" content="Harf harf bul, sahneyi kap! İlk harf bizden, gerisi senden. Tilki sunuyor." />
+    <meta property="og:image" content="https://spellvo.app/og/home-tr.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="SpellVo: renkli harf taşlarıyla logo ve mikrofonlu tilki sunucu" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SpellVo · Kelime yarışması" />
+    <meta name="twitter:description" content="Harf harf bul, sahneyi kap! İlk harf bizden, gerisi senden. Tilki sunuyor." />
+    <meta name="twitter:image" content="https://spellvo.app/og/home-tr.jpg" />
+    <script>
+      // A challenge link from before spellvo.app had its own page (…/#c=…): the challenge page plays it.
+      if (/(^#|&)c=/.test(location.hash)) location.replace('/c/' + location.hash);
+    </script>
+    <script type="module" crossorigin src="/assets/site-BCucl4CJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/site-DWHxZTb1.css">
+  </head>
+  <body class="home">
+    <a class="skip" href="#main"><span lang="tr">İçeriğe geç</span><span lang="en">Skip to content</span></a>
+    <header class="wrap top">
+      <a class="brand" href="/" aria-label="SpellVo"><span class="tile tile--correct" aria-hidden="true">S</span><span class="tile tile--present" aria-hidden="true">p</span><span class="tile " aria-hidden="true">e</span><span class="tile tile--correct" aria-hidden="true">l</span><span class="tile tile--present" aria-hidden="true">l</span><span class="tile " aria-hidden="true">V</span><span class="tile tile--correct" aria-hidden="true">o</span></a>
+      <nav class="top__links" aria-label="SpellVo">
+        <a class="top__link" href="/support/"><span lang="tr">Destek</span><span lang="en">Support</span></a>
+        <a class="top__link" href="/privacy/"><span lang="tr">Gizlilik</span><span lang="en">Privacy</span></a>
+        <div class="langs" role="group" aria-label="Dil / Language">
+          <button type="button" data-set-lang="tr" aria-pressed="false" title="Türkçe">TR</button>
+          <button type="button" data-set-lang="en" aria-pressed="false" title="English">EN</button>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="wrap hero" aria-labelledby="hero-title">
+        <div class="hero__text">
+          <p class="logo" role="img" aria-label="SpellVo"><span class="tile tile--correct" style="--i: 0" aria-hidden="true">S</span><span class="tile tile--present" style="--i: 1" aria-hidden="true">p</span><span class="tile " style="--i: 2" aria-hidden="true">e</span><span class="tile tile--correct" style="--i: 3" aria-hidden="true">l</span><span class="tile tile--present" style="--i: 4" aria-hidden="true">l</span><span class="tile " style="--i: 5" aria-hidden="true">V</span><span class="tile tile--correct" style="--i: 6" aria-hidden="true">o</span></p>
+          <p class="eyebrow"><span lang="tr">Kelime yarışması</span><span lang="en">The word game show</span></p>
+          <h1 id="hero-title"><span lang="tr">Harf harf bul, sahneyi kap!</span><span lang="en">Find the word, steal the show!</span></h1>
+          <p class="lead">
+            <span lang="tr">İlk harf bizden, gerisi senden. Üç aşama, on kelime ve büyük final: tilki sunuyor, alkışlar senin için.</span>
+            <span lang="en">The first letter is on us, the rest is up to you. Three stages, ten words and a grand final: the fox hosts, the applause is yours.</span>
+          </p>
+          <span class="store store--soon" aria-disabled="true" data-store="soon"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="store__icon"><rect x="5.5" y="2" width="13" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v7M8.8 11l3.2 3.2 3.2-3.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 18.5h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span lang="tr">Yakında Google Play’de</span><span lang="en">Coming soon to Google Play</span></span>
+        </div>
+        <div class="hero__stage" aria-hidden="true">
+          <div class="spot"></div>
+          <span class="float" style="left: 4%; top: 18%; --d: -1s; --r: -12deg"><span class="tile tile--correct">K</span></span>
+          <span class="float" style="right: 6%; top: 8%; --d: -3s; --r: 10deg"><span class="tile tile--present">E</span></span>
+          <span class="float" style="left: 10%; bottom: 22%; --d: -2s; --r: 8deg"><span class="tile">L</span></span>
+          <span class="float" style="right: 2%; bottom: 34%; --d: -4.5s; --r: -6deg"><span class="tile tile--absent">O</span></span>
+          <img class="fox" src="/img/fox-host.webp" width="560" height="992" alt="" fetchpriority="high" decoding="async" />
+        </div>
+      </section>
+
+      <section class="wrap section" id="how" aria-labelledby="how-title">
+        <div class="section__head">
+          <h2 id="how-title"><span lang="tr">Nasıl oynanır?</span><span lang="en">How it plays</span></h2>
+          <p class="section__lead">
+            <span lang="tr">Kuralları bir turda kaparsın; ustalaşmak ise ayrı bir zevk.</span>
+            <span lang="en">You learn the rules in one round; mastering them is another story.</span>
+          </p>
+        </div>
+        <ol class="steps">
+          <li class="card step">
+            <h3><span lang="tr">İlk harf verilir</span><span lang="en">The first letter is given</span></h3>
+            <p>
+              <span lang="tr">Her kelime ilk harfiyle gelir. 4, 5 ve 6 harfli kelimelerle üç aşama, her kelimeye 5 tahmin.</span>
+              <span lang="en">Every word arrives with its first letter in place. Three stages of 4, 5 and 6 letters, five guesses per word.</span>
+            </p>
+            <div class="row" aria-hidden="true"><span class="tile tile--correct">K</span><span class="tile"></span><span class="tile"></span><span class="tile"></span><span class="tile"></span></div>
+          </li>
+          <li class="card step">
+            <h3><span lang="tr">Renkler yol gösterir</span><span lang="en">The colors show the way</span></h3>
+            <p>
+              <span lang="tr">Her tahminden sonra taşlar renklenir. Doğru harfler bir sonraki satıra taşınır.</span>
+              <span lang="en">After each guess the tiles light up. Letters in the right spot carry down to the next row.</span>
+            </p>
+            <div class="board" aria-hidden="true">
+              <div class="row" lang="tr"><span class="tile tile--correct">K</span><span class="tile tile--present">E</span><span class="tile tile--present">M</span><span class="tile tile--present">A</span><span class="tile tile--absent">N</span></div>
+              <div class="row" lang="tr"><span class="tile tile--correct">K</span><span class="tile tile--correct">A</span><span class="tile tile--correct">L</span><span class="tile tile--correct">E</span><span class="tile tile--correct">M</span></div>
+              <div class="row" lang="en"><span class="tile tile--correct">B</span><span class="tile tile--present">A</span><span class="tile tile--present">R</span><span class="tile tile--absent">O</span><span class="tile tile--correct">N</span></div>
+              <div class="row" lang="en"><span class="tile tile--correct">B</span><span class="tile tile--correct">R</span><span class="tile tile--correct">A</span><span class="tile tile--correct">I</span><span class="tile tile--correct">N</span></div>
+            </div>
+            <ul class="legend">
+              <li><span class="tile tile--correct" aria-hidden="true"></span><span lang="tr">doğru yerde</span><span lang="en">right spot</span></li>
+              <li><span class="tile tile--present" aria-hidden="true"></span><span lang="tr">var, başka yerde</span><span lang="en">in the word, wrong spot</span></li>
+              <li><span class="tile tile--absent" aria-hidden="true"></span><span lang="tr">kelimede yok</span><span lang="en">not in the word</span></li>
+            </ul>
+          </li>
+          <li class="card step">
+            <h3><span lang="tr">Saat işliyor</span><span lang="en">The clock is ticking</span></h3>
+            <p>
+              <span lang="tr">Her tahmine 15 saniye, 6 harfte 20. Yıldızlı altın taşın harfini erken bulursan bonus kaparsın.</span>
+              <span lang="en">15 seconds per guess, 20 for 6 letters. Find the starred golden tile’s letter early for a bonus.</span>
+            </p>
+            <div class="timer" aria-hidden="true"><span class="timer__bar"></span><strong>15</strong></div>
+          </li>
+          <li class="card step">
+            <h3><span lang="tr">Büyük final</span><span lang="en">The grand final</span></h3>
+            <p>
+              <span lang="tr">Dokuz kelimeden sonra 7 harfli tek bir kelime: 5 tahmin ve hepsi için tek bir 60 saniye.</span>
+              <span lang="en">After nine words, one 7-letter word: five guesses and a single 60 seconds for all of them.</span>
+            </p>
+            <div class="row" aria-hidden="true"><span class="tile tile--correct">S</span><span class="tile"></span><span class="tile"></span><span class="tile"></span><span class="tile"></span><span class="tile"></span><span class="tile"></span></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="wrap section" id="scenes" aria-labelledby="scenes-title">
+        <div class="section__head">
+          <h2 id="scenes-title"><span lang="tr">Sahneden kareler</span><span lang="en">Scenes from the show</span></h2>
+        </div>
+        <ul class="shots">
+          <li><figure class="shot">
+            <div class="phone">
+              <img lang="tr" src="/shots/tr-lobby.webp" width="390" height="844" loading="lazy" decoding="async" alt="Lobi: sahnede tilki sunucu, Oyna düğmesi ve Günün Yarışması" />
+              <img lang="en" src="/shots/en-lobby.webp" width="390" height="844" loading="lazy" decoding="async" alt="The lobby: the fox host on stage, the Play button and the Daily Challenge" />
+            </div>
+            <figcaption><span lang="tr">Sahne senin</span><span lang="en">Your stage</span></figcaption>
+          </figure></li>
+          <li><figure class="shot">
+            <div class="phone">
+              <img lang="tr" src="/shots/tr-round.webp" width="390" height="844" loading="lazy" decoding="async" alt="Bir tur: renkli taşlarla iki tahmin ve süre çubuğu" />
+              <img lang="en" src="/shots/en-round.webp" width="390" height="844" loading="lazy" decoding="async" alt="A round: two guesses in colored tiles and the timer bar" />
+            </div>
+            <figcaption><span lang="tr">Renkleri oku</span><span lang="en">Read the colors</span></figcaption>
+          </figure></li>
+          <li><figure class="shot">
+            <div class="phone">
+              <img lang="tr" src="/shots/tr-result.webp" width="390" height="844" loading="lazy" decoding="async" alt="Tur sonucu: tilki altın taşı kutluyor" />
+              <img lang="en" src="/shots/en-result.webp" width="390" height="844" loading="lazy" decoding="async" alt="A round’s result: the fox cheers the golden tile" />
+            </div>
+            <figcaption><span lang="tr">Tilki seninle</span><span lang="en">The fox cheers you on</span></figcaption>
+          </figure></li>
+          <li><figure class="shot">
+            <div class="phone">
+              <img lang="tr" src="/shots/tr-final.webp" width="390" height="844" loading="lazy" decoding="async" alt="Büyük final: 7 harfli kelime ve 60 saniyelik süre" />
+              <img lang="en" src="/shots/en-final.webp" width="390" height="844" loading="lazy" decoding="async" alt="The grand final: a 7-letter word and the 60-second pool" />
+            </div>
+            <figcaption><span lang="tr">Büyük final</span><span lang="en">The grand final</span></figcaption>
+          </figure></li>
+          <li><figure class="shot">
+            <div class="phone">
+              <img lang="tr" src="/shots/tr-end.webp" width="390" height="844" loading="lazy" decoding="async" alt="Oyun sonu: yeni rekor ve toplam puan" />
+              <img lang="en" src="/shots/en-end.webp" width="390" height="844" loading="lazy" decoding="async" alt="The end screen: a new record and the total score" />
+            </div>
+            <figcaption><span lang="tr">Rekorunu kır</span><span lang="en">Beat your record</span></figcaption>
+          </figure></li>
+        </ul>
+      </section>
+
+      <section class="wrap section" id="features" aria-labelledby="features-title">
+        <div class="section__head">
+          <h2 id="features-title"><span lang="tr">Sahnede neler var?</span><span lang="en">What’s on the show</span></h2>
+        </div>
+        <ul class="features">
+          <li class="card feature">
+            <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28"><rect x="3.5" y="5" width="17" height="15.5" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m12 12.2 1.1 2.2 2.4.3-1.8 1.7.5 2.4-2.2-1.2-2.2 1.2.5-2.4-1.8-1.7 2.4-.3z" fill="currentColor"/></svg></span>
+            <h3><span lang="tr">Günün Yarışması</span><span lang="en">Daily Challenge</span></h3>
+            <p><span lang="tr">Herkese aynı kelimeler, günde tek hak. Her gün oyna, serini büyüt.</span><span lang="en">The same words for everyone, one try a day. Play daily and grow your streak.</span></p>
+          </li>
+          <li class="card feature">
+            <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l9.5 9.5M13.5 13.5l-2 2 3 3 2-2M14.5 16.5 18 20M20 4l-9.5 9.5M10.5 13.5l2 2-3 3-2-2M9.5 16.5 6 20"/></svg></span>
+            <h3><span lang="tr">Arkadaşına meydan oku</span><span lang="en">Challenge a friend</span></h3>
+            <p><span lang="tr">Skorunu bir bağlantıyla gönder. Aynı 10 kelime; arkadaşın uygulama olmadan, tarayıcıda da oynayabilir.</span><span lang="en">Send your score as a link. The same 10 words, and your friend can play it even without the app, right in the browser.</span></p>
+          </li>
+          <li class="card feature">
+            <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="m12 6.8 1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z" fill="currentColor"/></svg></span>
+            <h3><span lang="tr">Altın taş</span><span lang="en">The golden tile</span></h3>
+            <p><span lang="tr">Her kelimede bir taş altın. Harfini ne kadar erken bulursan bonus o kadar büyük.</span><span lang="en">One tile in every word is golden. The earlier you find its letter, the bigger the bonus.</span></p>
+          </li>
+          <li class="card feature">
+            <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.6 4M17 6h2.5a2.5 2.5 0 0 1-2.6 4"/></svg></span>
+            <h3><span lang="tr">Rekorlar ve x2</span><span lang="en">Records and the x2</span></h3>
+            <p><span lang="tr">Bir aşamanın üç kelimesini de ilk tahminde bil, kelime puanları ikiye katlansın. En iyi skorun seni bekliyor.</span><span lang="en">Get all three words of a stage on the first guess and its word points double. Your best score is waiting.</span></p>
+          </li>
+          <li class="card feature">
+            <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg></span>
+            <h3><span lang="tr">Türkçe ve İngilizce</span><span lang="en">Turkish and English</span></h3>
+            <p><span lang="tr">Uygulama dilini ve kelime dilini ayrı ayrı seç: İngilizce menüyle Türkçe kelimeler de olur.</span><span lang="en">Pick the app language and the word language separately: English menus with Turkish words work too.</span></p>
+          </li>
+          <li class="card feature">
+            <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6"/></svg></span>
+            <h3><span lang="tr">Tilki sunucu</span><span lang="en">The fox host</span></h3>
+            <p><span lang="tr">Her turda seninle sevinen, şaşıran, üzülen bir sunucu. Mikrofon tilkide, sahne sende.</span><span lang="en">A host who cheers, gasps and groans with you every round. The fox has the mic; the stage is yours.</span></p>
+          </li>
+        </ul>
+
+        <div class="finale">
+          <img src="/img/fox-celebrate.webp" width="420" height="744" alt="" loading="lazy" decoding="async" />
+          <h2><span lang="tr">Sahne seni bekliyor</span><span lang="en">The stage is waiting</span></h2>
+          <p><span lang="tr">SpellVo Android telefonlar için. Bir arkadaşın meydan okuduysa bağlantıya dokun: hemen tarayıcında oynarsın.</span><span lang="en">SpellVo is made for Android phones. Got a challenge from a friend? Tap the link and play it right in your browser.</span></p>
+          <span class="store store--soon" aria-disabled="true" data-store="soon"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="store__icon"><rect x="5.5" y="2" width="13" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v7M8.8 11l3.2 3.2 3.2-3.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 18.5h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span lang="tr">Yakında Google Play’de</span><span lang="en">Coming soon to Google Play</span></span>
+        </div>
+      </section>
+    </main>
+    <footer class="foot">
+      <div class="wrap">
+        <nav aria-label="SpellVo">
+          <a href="/"><span lang="tr">Ana sayfa</span><span lang="en">Home</span></a>
+          <a href="/support/"><span lang="tr">Destek</span><span lang="en">Support</span></a>
+          <a href="/privacy/"><span lang="tr">Gizlilik politikası</span><span lang="en">Privacy policy</span></a>
+          <a href="/licenses/"><span lang="tr">Lisanslar</span><span lang="en">Licenses</span></a>
+          <a class="mail" href="mailto:hello@spellvo.app">hello@spellvo.app</a>
+        </nav>
+        <p>© 2026 SpellVo. <span lang="tr">Google Play, Google LLC’nin ticari markasıdır.</span><span lang="en">Google Play is a trademark of Google LLC.</span></p>
+      </div>
+    </footer>
+  </body>
+</html>

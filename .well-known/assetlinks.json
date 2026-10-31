@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.spellvo",
+      "sha256_cert_fingerprints": [
+        "BA:A9:4F:D3:AD:4E:8E:EE:0C:AC:17:7F:44:6E:2B:5F:00:75:79:6D:E6:2D:F5:0A:82:A5:76:2F:F3:34:51:3B"
+      ]
+    }
+  }
+]
