@@ -59,8 +59,8 @@
     <main id="main" class="doc">
       <!--
         The privacy policy (docs/SITE.md "Privacy policy"). Write only what the app and the site really
-        do. Steps C and D add advertising, purchases and perhaps analytics: those sections say "from the
-        release". Before changing anything here, read the owner's open points in docs/SITE.md.
+        do: ads, consent and analytics as built in step C1 (docs/ANDROID.md "Step C1"); purchases as
+        planned for C2. Keep docs/PLAY_DATA_SAFETY.md in step. Read the owner's open points in docs/SITE.md.
       -->
 
       <!-- ===================== Türkçe ===================== -->
@@ -74,6 +74,7 @@
             <li><strong>Oyun verilerin cihazında kalır.</strong> Ayarların, skorların ve ilerlemen yalnızca telefonunda saklanır; bize gönderilmez. Oyun verisi toplayan bir sunucumuz yok.</li>
             <li><strong>Bildirimler cihazda planlanır.</strong> Hatırlatmalar için bir sunucu kullanılmaz.</li>
             <li><strong>Reklam ve satın almalar Google üzerinden</strong> (uygulama mağazada yayımlandığında): Google AdMob ve Google Play Faturalandırma. Kişiselleştirilmiş reklam yalnızca izin verirsen.</li>
+            <li><strong>Analitik: Google Firebase Analytics.</strong> Adın, e-postan ya da yazdığın kelimeler gönderilmez; Ayarlar’dan istediğin zaman kapatabilirsin.</li>
             <li>Sorun ya da isteğin için: <a href="mailto:hello@spellvo.app">hello@spellvo.app</a></li>
           </ul>
         </div>
@@ -107,7 +108,8 @@
           <li>oyun ilerlemesi: en iyi skorların, Günün Yarışması sonuçları ve serin, can sayın, jokerlerin ve diğer eşyaların, Altın Patilerin, eğitimi görüp görmediğin, bitirdiğin oyun sayısı;</li>
           <li>oynadığın meydan okumalar ve isteğe bağlı takma adın;</li>
           <li>kelime listesinde bulunmayan tahminlerin (yalnızca cihazda; listeyi iyileştirmek için geliştirme sürümlerinde gösterilir);</li>
-          <li>teknik tercihler: cihazının animasyonları ne kadar akıcı çizdiğine göre seçilen performans seviyesi, değerlendirme isteğinin en son ne zaman gösterildiği.</li>
+          <li>satın aldığın kalıcı haklar (örneğin “Reklamları kaldır”) ve analitik ile ilgili seçimin;</li>
+          <li>teknik tercihler: cihazının animasyonları ne kadar akıcı çizdiğine göre seçilen performans seviyesi, değerlendirme isteğinin en son ne zaman gösterildiği, canların saatinin değiştirilmediğini anlamak için cihazın açılıştan beri geçen süresine dayanan bir saat kaydı.</li>
         </ul>
         <p>Bu bilgiler bize gönderilmez ve biz onlara erişemeyiz. Uygulamayı kaldırdığında ya da telefonunun ayarlarından uygulamanın verilerini sildiğinde silinirler. Telefonunda Android yedeklemesi açıksa Android bu verileri Google hesabındaki yedeğine katabilir; bu yedek Google tarafından, senin hesap ayarlarına göre tutulur ve biz ona erişemeyiz.</p>
         <p>Uygulama konum, rehber, kamera, mikrofon ya da dosyalarına erişim istemez. İnternet bağlantısını; reklamlar, satın almalar ve bağlantıları açmak için kullanır, oyunun kendisi çevrimdışı da çalışır.</p>
@@ -124,20 +126,24 @@
         <p>Google Play, telefonunun ayarları izin veriyorsa uygulamanın çökme ve performans istatistiklerini (Android vitals) bizimle toplu olarak paylaşabilir; bu veriler seni tanımlamaz.</p>
 
         <h2 id="tr-reklam">6. Reklamlar (Google AdMob)</h2>
-        <p>Uygulama mağazada yayımlandığında ücretsiz kalabilmek için Google AdMob ile reklam gösterir: Altın Pati veya ödül kazanmak için isteğe bağlı izlediğin ödüllü reklamlar ve bazı oyunların sonunda, kurallarla sınırlanmış geçiş reklamları. AdMob, reklamları göstermek, ölçmek ve dolandırıcılığı önlemek için cihazından şunları toplayabilir: reklam kimliği (Android advertising ID) ve uygulama kümesi kimliği, IP adresi ve ondan çıkarılan yaklaşık konum, cihaz ve uygulama bilgileri, reklamlarla etkileşimlerin.</p>
-        <p><strong>Kişiselleştirilmiş reklam yalnızca izninle.</strong> Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de (ve yasanın gerektirdiği diğer yerlerde) uygulama, Google’ın izin aracı (User Messaging Platform) ile önce iznini sorar. Seçimini uygulamanın Ayarlar bölümünden istediğin zaman değiştirebilirsin. İzin vermezsen reklamlar kişiselleştirilmez ama yine de gösterilebilir. Reklam kimliğini telefonunun ayarlarından sıfırlayabilir ya da silebilirsin.</p>
+        <p>Uygulama mağazada yayımlandığında ücretsiz kalabilmek için Google AdMob ile reklam gösterir. İki tür reklam vardır ve banner reklam yoktur:</p>
+        <ul>
+          <li><strong>Ödüllü reklamlar:</strong> yalnızca sen seçersen; karşılığında bir joker, Ek Süre, Sözlük ya da can, büyük finalde devam hakkı veya oyun sonundaki Altın Patilerin katlanması gibi bir ödül alırsın.</li>
+          <li><strong>Geçiş reklamları:</strong> yalnızca bir oyunun sonuç ekranından ayrılırken, en çok iki oyunda bir; oyun sırasında ve turlar arasında asla, uygulamayı kurduğun gün ve o oyunda ödüllü reklam izlediysen hiç gösterilmez. “Reklamları kaldır” satın alırsan geçiş reklamları tamamen kalkar; ödüllü reklamlar seçimine bağlı olarak kalır.</li>
+        </ul>
+        <p>AdMob, reklamları göstermek, ölçmek ve dolandırıcılığı önlemek için cihazından şunları toplayabilir: reklam kimliği (Android advertising ID) ve uygulama kümesi kimliği, IP adresi ve ondan çıkarılan yaklaşık konum, cihaz ve uygulama bilgileri, reklamlarla etkileşimlerin. Reklam içerikleri en çok “ebeveyn rehberliği” (PG) düzeyiyle sınırlandırılır; reklam istekleri çocuklara yönelik olarak işaretlenmez.</p>
+        <p><strong>Kişiselleştirilmiş reklam yalnızca izninle.</strong> Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de (ve yasanın gerektirdiği diğer yerlerde) uygulama, Google’ın izin aracıyla (User Messaging Platform) önce iznini sorar ve seçimin belli olmadan hiçbir reklam istemez. İzin vermezsen yalnızca kişiselleştirilmemiş reklamlar istenir. Bu bölgelerde seçimini istediğin zaman uygulamanın <strong>Ayarlar → Gizlilik → Gizlilik seçenekleri</strong> bölümünden değiştirebilirsin. Reklam kimliğini telefonunun ayarlarından sıfırlayabilir ya da silebilirsin.</p>
+        <p>Gösterilecek reklam yoksa (örneğin internet bağlantısı yoksa) hiçbir şey kaybetmezsin; oyun kaldığı yerden devam eder.</p>
         <p>Google’ın bu verileri nasıl kullandığını <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Google’ın iş ortaklarının uygulamalarındaki veri kullanımı</a> sayfasında ve <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a>’nda okuyabilirsin.</p>
 
         <h2 id="tr-satin">7. Satın almalar (Google Play)</h2>
-        <p>Uygulama içi satın almalar (örneğin Altın Pati paketleri) mağazada yayımlandıktan sonra Google Play Faturalandırma ile yapılır. Ödeme bilgilerini Google işler; biz kart bilgilerini hiç görmeyiz. Uygulama, satın aldığın ürünü sana verebilmek için Google Play’den satın alma onayını (ürün, sipariş numarası, satın alma jetonu) alır ve bunu cihazında işler. İadeler Google Play’in iade kurallarına tabidir.</p>
+        <p>Uygulama mağazada yayımlandıktan sonra şu ürünler Google Play Faturalandırma ile satılır: joker, Ek Süre, Sözlük ve can paketleri (her biri kullandıkça biter) ve bir kez alınan, kalıcı “Reklamları kaldır” (oyun sonu geçiş reklamlarını kaldırır; ödüllü reklamlar seçimine bağlı olarak kalır). Altın Pati satılmaz; yalnızca oynayarak kazanılır. Ödeme bilgilerini Google işler; biz kart bilgilerini hiç görmeyiz. Uygulama, satın aldığın ürünü sana verebilmek için Google Play’den satın alma onayını (ürün, sipariş numarası, satın alma jetonu) alır ve bunu cihazında işler. İadeler Google Play’in iade kurallarına tabidir.</p>
 
         <h2 id="tr-analitik">8. Analitik</h2>
-        <p>Uygulama ve site şu anda analitik, kullanım takibi ya da çökme raporlama aracı kullanmıyor. Bu değişirse bu bölümü, aracın adını ve topladığı bilgileri yazarak güncelleriz.</p>
-        <!-- PENDING (owner to confirm in step C; not in effect, not shown): only if an analytics SDK is added.
-        <section hidden data-pending="analytics">
-          <p>Uygulamanın nasıl kullanıldığını anlamak ve hataları düzeltmek için [ARAÇ, ör. Firebase Analytics / Crashlytics] kullanıyoruz. Bu araç; uygulama örneği kimliği, cihaz modeli, işletim sistemi sürümü, ülke (IP adresinden), oturum süresi, açılan ekranlar ve oyun olayları (ör. oyun başladı / bitti) ile çökme raporlarını toplar. Reklam kimliğini analitik için kullanmayız. Veriler [SÜRE] saklanır. Avrupa Ekonomik Alanı’nda analitik yalnızca iznine göre çalışır; Ayarlar’dan kapatabilirsin.</p>
-        </section>
-        -->
+        <p>Uygulamanın nasıl kullanıldığını anlamak ve oyunu iyileştirmek için uygulamada (Android) <strong>Google Firebase Analytics</strong> kullanıyoruz. Site ve tarayıcıdaki meydan okuma analitik kullanmaz.</p>
+        <p><strong>Toplananlar:</strong> uygulama örneği kimliği (uygulamayı yeniden kurunca değişen rastgele bir kimlik); oyun olayları (eğitim başladı ya da bitti, oyun başladı ya da bitti: oyun türü, kelime dili, ulaşılan aşama ve kaba bir puan aralığı; her turun sonu: kelime uzunluğu, bulunup bulunmadığı, tahmin sayısı, joker ya da Ek Süre kullanılıp kullanılmadığı; Günün Yarışması oynandı, meydan okuma bağlantısı açıldı ya da gönderildi, paylaşım, bildirime dokunuldu, gösterilen reklamlar, kazanılan reklam ödülleri ve gösterilemeyen reklamlar); cihaz modeli, işletim sistemi ve uygulama sürümü; IP adresinden çıkarılan ülke ya da bölge (IP adresinin kendisi Analytics’te saklanmaz); oturum bilgileri (ilk açılış, oturum başlangıcı, kullanım süresi).</p>
+        <p><strong>Toplanmayanlar:</strong> adın, e-postan, telefon numaran, reklam kimliğin (analitik için kapalıdır), yazdığın kelimeler ya da tahminler, takma adın ve tam puanın.</p>
+        <p><strong>İzin ve kapatma:</strong> Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de analitik, Google’ın izin formunda cihazda bilgi saklanmasına izin verdiysen açılır; diğer yerlerde varsayılan olarak açıktır. Her yerde <strong>Ayarlar → Gizlilik → Analitik</strong> anahtarıyla istediğin zaman kapatıp açabilirsin; kapalıyken hiçbir olay gönderilmez. Uygulama, Google’ın izin modunu (Consent Mode) seçimine göre ayarlar. Olay verileri Google Analytics’te en çok 14 ay saklanır.</p>
 
         <h2 id="tr-site">9. Site ve web meydan okuması</h2>
         <p>spellvo.app sitesi GitHub Pages’te barındırılır. GitHub, güvenlik amacıyla siteyi ziyaret edenlerin IP adreslerini kaydeder (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Gizlilik Bildirimi</a>). Sitede çerez, reklam ve analitik yoktur; yazı tipleri de sitemizden yüklenir, üçüncü taraf bir yazı tipi servisi kullanılmaz.</p>
@@ -150,11 +156,11 @@
         <p>SpellVo 13 yaşın altındaki çocuklara yönelik değildir ve bilerek 13 yaşından küçüklerden kişisel veri toplamayız. Ülkendeki dijital rıza yaşının altındaysan, reklam izinleri için bir ebeveyninin onayı gerekir. Bir çocuğun bize veri verdiğini düşünüyorsan bize yaz, sileriz.</p>
 
         <h2 id="tr-hukuk">12. Hukuki dayanak ve yurt dışına aktarım</h2>
-        <p>Cihazında kalan veriler bize ulaşmaz. Bizim ya da iş ortaklarımızın işlediği veriler için dayanaklar şunlardır: kişiselleştirilmiş reklam için açık rızan (KVKK m. 5/1, GDPR m. 6/1-a); satın aldığın ürünü teslim etmek için sözleşmenin ifası (KVKK m. 5/2-c, GDPR m. 6/1-b); kişiselleştirilmemiş reklam, dolandırıcılığın önlenmesi, sitenin güvenliği ve e-postalarına cevap vermek için meşru menfaat (KVKK m. 5/2-f, GDPR m. 6/1-f).</p>
+        <p>Cihazında kalan veriler bize ulaşmaz. Bizim ya da iş ortaklarımızın işlediği veriler için dayanaklar şunlardır: kişiselleştirilmiş reklam için ve Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de analitik için açık rızan (KVKK m. 5/1, GDPR m. 6/1-a); diğer yerlerde, istediğin zaman kapatabildiğin analitik için meşru menfaat (KVKK m. 5/2-f, GDPR m. 6/1-f); satın aldığın ürünü teslim etmek için sözleşmenin ifası (KVKK m. 5/2-c, GDPR m. 6/1-b); kişiselleştirilmemiş reklam, dolandırıcılığın önlenmesi, sitenin güvenliği ve e-postalarına cevap vermek için meşru menfaat (KVKK m. 5/2-f, GDPR m. 6/1-f).</p>
         <p>Google ve GitHub verileri Türkiye ve AB dışında, örneğin ABD’de işleyebilir. Bu aktarımlar bu şirketlerin standart sözleşmeleri ve KVKK m. 9 ile GDPR’ın aktarım kuralları çerçevesinde yapılır.</p>
 
         <h2 id="tr-haklar">13. Hakların (KVKK ve GDPR)</h2>
-        <p>KVKK m. 11 ve GDPR kapsamında; verilerinin işlenip işlenmediğini öğrenme, bilgi isteme, düzeltilmesini ya da silinmesini isteme, işlemeye itiraz etme, verilerini taşıma, iznini geri çekme ve şikâyette bulunma hakların vardır (Türkiye’de Kişisel Verileri Koruma Kurulu’na, AB’de kendi ülkenin denetim makamına). Verilerinin neredeyse tamamı yalnızca cihazında olduğu için çoğu hakkı doğrudan kullanabilirsin: uygulamanın verilerini silmek her şeyi siler. Reklam verileri için Google’ın araçlarını ve reklam kimliği ayarlarını kullanabilirsin. Diğer her istek için <a href="mailto:hello@spellvo.app">hello@spellvo.app</a> adresine yaz; en geç 30 gün içinde cevap veririz.</p>
+        <p>KVKK m. 11 ve GDPR kapsamında; verilerinin işlenip işlenmediğini öğrenme, bilgi isteme, düzeltilmesini ya da silinmesini isteme, işlemeye itiraz etme, verilerini taşıma, iznini geri çekme ve şikâyette bulunma hakların vardır (Türkiye’de Kişisel Verileri Koruma Kurulu’na, AB’de kendi ülkenin denetim makamına). Verilerinin neredeyse tamamı yalnızca cihazında olduğu için çoğu hakkı doğrudan kullanabilirsin: uygulamanın verilerini silmek her şeyi siler. Reklam verileri için Google’ın araçlarını, reklam kimliği ayarlarını ve uygulamadaki Gizlilik seçeneklerini, analitik için Ayarlar’daki Analitik anahtarını kullanabilirsin; analitik verilerinin silinmesini de bize yazarak isteyebilirsin. Diğer her istek için <a href="mailto:hello@spellvo.app">hello@spellvo.app</a> adresine yaz; en geç 30 gün içinde cevap veririz.</p>
 
         <h2 id="tr-degisiklik">14. Değişiklikler ve iletişim</h2>
         <p>Bu politikayı değiştirirsek bu sayfayı ve en üstteki yürürlük tarihini güncelleriz. Sorun olursa: <a href="mailto:hello@spellvo.app">hello@spellvo.app</a>.</p>
@@ -171,6 +177,7 @@
             <li><strong>Your game data stays on your device.</strong> Your settings, scores and progress are stored only on your phone and are not sent to us. We run no server that collects game data.</li>
             <li><strong>Notifications are scheduled on the device.</strong> No server is involved in the reminders.</li>
             <li><strong>Ads and purchases go through Google</strong> (once the app is published): Google AdMob and Google Play Billing. Personalized ads only with your consent.</li>
+            <li><strong>Analytics: Google Firebase Analytics.</strong> No name, email or the words you type are sent; you can turn it off at any time in Settings.</li>
             <li>Questions or requests: <a href="mailto:hello@spellvo.app">hello@spellvo.app</a></li>
           </ul>
         </div>
@@ -204,7 +211,8 @@
           <li>game progress: your best scores, Daily Challenge results and streak, lives, jokers and other items, Golden Paws, whether you have seen the tutorial, how many games you have finished;</li>
           <li>the challenges you have played and your optional nickname;</li>
           <li>guesses that were not in the word list (on the device only; shown in development builds to improve the list);</li>
-          <li>technical choices: the performance level picked from how smoothly your device draws the animations, and when the review prompt was last shown.</li>
+          <li>what you own for good (such as “Remove ads”) and your analytics choice;</li>
+          <li>technical choices: the performance level picked from how smoothly your device draws the animations, when the review prompt was last shown, and a clock record based on the time since your device started, used to tell that the clock was not changed to refill lives.</li>
         </ul>
         <p>None of this is sent to us, and we cannot access it. It is deleted when you uninstall the app or clear its data in your phone’s settings. If Android backup is on for your phone, Android may include this data in the backup in your Google account; that backup is kept by Google under your account settings, and we cannot access it.</p>
         <p>The app does not ask for your location, contacts, camera, microphone or files. It uses the internet for ads, purchases and opening links; the game itself also works offline.</p>
@@ -221,20 +229,24 @@
         <p>If your phone’s settings allow it, Google Play may share the app’s crash and performance statistics (Android vitals) with us in aggregate; this data does not identify you.</p>
 
         <h2 id="en-ads">6. Advertising (Google AdMob)</h2>
-        <p>Once the app is published, it shows ads with Google AdMob so it can stay free: rewarded ads you choose to watch for Golden Paws or other rewards, and interstitial ads at the end of some games, limited by rules. To show and measure ads and to prevent fraud, AdMob may collect from your device: the advertising ID (Android advertising ID) and app set ID, your IP address and the approximate location derived from it, device and app information, and your interactions with ads.</p>
-        <p><strong>Personalized ads only with your consent.</strong> In the European Economic Area, the United Kingdom and Switzerland (and wherever else the law requires it), the app first asks for your consent with Google’s consent tool (User Messaging Platform). You can change your choice at any time in the app’s Settings. If you don’t consent, ads are not personalized but may still be shown. You can reset or delete your advertising ID in your phone’s settings.</p>
+        <p>Once the app is published, it shows ads with Google AdMob so it can stay free. There are two kinds, and no banner ads:</p>
+        <ul>
+          <li><strong>Rewarded ads:</strong> only when you choose one; you get a reward for it, such as a joker, Extra Time, a Wordbook or a life, a continue in the grand final, or your Golden Paws multiplied at the end of a game.</li>
+          <li><strong>Interstitial ads:</strong> only as you leave a game’s result screen, at most every second game; never during a game or between rounds, never on the day you installed the app, and never after you watched a rewarded ad in that game. If you buy “Remove ads”, interstitial ads are gone for good; rewarded ads stay, as your choice.</li>
+        </ul>
+        <p>To show and measure ads and to prevent fraud, AdMob may collect from your device: the advertising ID (Android advertising ID) and app set ID, your IP address and the approximate location derived from it, device and app information, and your interactions with ads. Ad content is limited to the “parental guidance” (PG) rating at most; ad requests are not tagged as directed at children.</p>
+        <p><strong>Personalized ads only with your consent.</strong> In the European Economic Area, the United Kingdom and Switzerland (and wherever else the law requires it), the app first asks for your consent with Google’s consent tool (User Messaging Platform) and requests no ad until your choice is known. If you don’t consent, only non-personalized ads are requested. In those regions you can change your choice at any time in the app under <strong>Settings → Privacy → Privacy options</strong>. You can reset or delete your advertising ID in your phone’s settings.</p>
+        <p>If no ad is available (for example without an internet connection), you lose nothing and the game carries on where it was.</p>
         <p>You can read how Google uses this data in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
 
         <h2 id="en-purchases">7. Purchases (Google Play)</h2>
-        <p>Once the app is published, in-app purchases (such as Golden Paw packs) are made with Google Play Billing. Google processes your payment details; we never see your card. To give you what you bought, the app receives the purchase confirmation from Google Play (the product, order number and purchase token) and handles it on your device. Refunds follow Google Play’s refund policies.</p>
+        <p>Once the app is published, these are sold with Google Play Billing: packs of jokers, Extra Time, Wordbooks and lives (each used up as you play) and a one-time, permanent “Remove ads” (it removes the end-of-game interstitial ads; rewarded ads stay, as your choice). Golden Paws are not sold; they are only earned by playing. Google processes your payment details; we never see your card. To give you what you bought, the app receives the purchase confirmation from Google Play (the product, order number and purchase token) and handles it on your device. Refunds follow Google Play’s refund policies.</p>
 
         <h2 id="en-analytics">8. Analytics</h2>
-        <p>The app and the website currently use no analytics, usage tracking or crash reporting tools. If this changes, we will update this section with the tool’s name and what it collects.</p>
-        <!-- PENDING (owner to confirm in step C; not in effect, not shown): only if an analytics SDK is added.
-        <section hidden data-pending="analytics">
-          <p>To understand how the app is used and to fix errors, we use [TOOL, e.g. Firebase Analytics / Crashlytics]. It collects an app instance ID, device model, operating system version, country (from the IP address), session length, the screens opened and game events (e.g. game started / finished), and crash reports. We don’t use the advertising ID for analytics. The data is kept for [PERIOD]. In the European Economic Area analytics runs only with your consent; you can turn it off in Settings.</p>
-        </section>
-        -->
+        <p>To understand how the app is used and to improve the game, the app (Android) uses <strong>Google Firebase Analytics</strong>. The website and the web challenge use no analytics.</p>
+        <p><strong>What it collects:</strong> an app instance ID (a random ID that changes when you reinstall the app); game events (the tutorial started or finished; a game started or finished: the kind of game, the word language, the stage reached and a rough score range; each round’s end: the word length, whether it was solved, the number of guesses, whether a joker or Extra Time was used; a Daily Challenge played, a challenge link opened or sent, a share, a tapped notification, ads shown, ad rewards earned and ads that could not be shown); the device model, operating system and app version; the country or region derived from the IP address (the IP address itself is not stored in Analytics); session data (first open, session start, time in use).</p>
+        <p><strong>What it doesn’t collect:</strong> your name, email, phone number, advertising ID (turned off for analytics), the words or guesses you type, your nickname or your exact score.</p>
+        <p><strong>Consent and turning it off:</strong> in the European Economic Area, the United Kingdom and Switzerland, analytics is on only if you allowed storing information on your device in Google’s consent form; elsewhere it is on by default. Everywhere you can turn it off and on at any time with the <strong>Settings → Privacy → Analytics</strong> switch; while it is off, no event is sent. The app sets Google’s Consent Mode according to your choice. Event data is kept in Google Analytics for at most 14 months.</p>
 
         <h2 id="en-site">9. The website and the web challenge</h2>
         <p>The spellvo.app website is hosted on GitHub Pages. GitHub logs visitors’ IP addresses for security purposes (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>). The website has no cookies, ads or analytics; its fonts are served from our own site, with no third-party font service.</p>
@@ -247,11 +259,11 @@
         <p>SpellVo is not directed at children under 13, and we do not knowingly collect personal data from children under 13. If you are under the age of digital consent in your country, a parent’s approval is needed for the ad consent. If you believe a child has given us data, write to us and we will delete it.</p>
 
         <h2 id="en-legal">12. Legal bases and international transfers</h2>
-        <p>Data that stays on your device never reaches us. For the data we or our partners process, the legal bases are: your explicit consent for personalized ads (KVKK Art. 5(1), GDPR Art. 6(1)(a)); performance of a contract to deliver what you buy (KVKK Art. 5(2)(c), GDPR Art. 6(1)(b)); legitimate interests for non-personalized ads, fraud prevention, the website’s security and answering your emails (KVKK Art. 5(2)(f), GDPR Art. 6(1)(f)).</p>
+        <p>Data that stays on your device never reaches us. For the data we or our partners process, the legal bases are: your explicit consent for personalized ads, and for analytics in the European Economic Area, the United Kingdom and Switzerland (KVKK Art. 5(1), GDPR Art. 6(1)(a)); elsewhere, legitimate interests for analytics you can turn off at any time (KVKK Art. 5(2)(f), GDPR Art. 6(1)(f)); performance of a contract to deliver what you buy (KVKK Art. 5(2)(c), GDPR Art. 6(1)(b)); legitimate interests for non-personalized ads, fraud prevention, the website’s security and answering your emails (KVKK Art. 5(2)(f), GDPR Art. 6(1)(f)).</p>
         <p>Google and GitHub may process data outside Turkey and the EU, for example in the United States. These transfers take place under these companies’ standard contracts and the transfer rules of KVKK Art. 9 and the GDPR.</p>
 
         <h2 id="en-rights">13. Your rights (KVKK and GDPR)</h2>
-        <p>Under KVKK Art. 11 and the GDPR you have the right to learn whether your data is processed, to request information, to have it corrected or erased, to object to processing, to data portability, to withdraw consent and to complain (in Turkey to the Personal Data Protection Board, in the EU to your country’s supervisory authority). As almost all of your data is only on your device, you can use most of these rights directly: deleting the app’s data deletes everything. For advertising data, use Google’s tools and your advertising ID settings. For anything else, write to <a href="mailto:hello@spellvo.app">hello@spellvo.app</a>; we answer within 30 days at the latest.</p>
+        <p>Under KVKK Art. 11 and the GDPR you have the right to learn whether your data is processed, to request information, to have it corrected or erased, to object to processing, to data portability, to withdraw consent and to complain (in Turkey to the Personal Data Protection Board, in the EU to your country’s supervisory authority). As almost all of your data is only on your device, you can use most of these rights directly: deleting the app’s data deletes everything. For advertising data, use Google’s tools, your advertising ID settings and the app’s Privacy options; for analytics, the Analytics switch in Settings, and you can also ask us to delete your analytics data. For anything else, write to <a href="mailto:hello@spellvo.app">hello@spellvo.app</a>; we answer within 30 days at the latest.</p>
 
         <h2 id="en-changes">14. Changes and contact</h2>
         <p>If we change this policy, we update this page and the effective date at the top. Questions: <a href="mailto:hello@spellvo.app">hello@spellvo.app</a>.</p>
