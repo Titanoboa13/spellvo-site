@@ -7,6 +7,8 @@
       "namespace": "android_app",
       "package_name": "app.spellvo",
       "sha256_cert_fingerprints": [
+        "3F:0A:4F:4E:34:F5:84:A1:79:FC:F5:95:AC:EC:AD:DE:D6:14:01:29:60:BB:14:4E:FB:93:4A:89:9C:0C:F0:5C",
+        "99:8C:FC:8A:63:F9:9F:47:6D:6E:EB:E1:16:AD:86:F8:91:0A:F1:81:36:14:C8:98:36:D5:28:EA:B9:06:0D:E3",
         "BA:A9:4F:D3:AD:4E:8E:EE:0C:AC:17:7F:44:6E:2B:5F:00:75:79:6D:E6:2D:F5:0A:82:A5:76:2F:F3:34:51:3B"
       ]
     }
