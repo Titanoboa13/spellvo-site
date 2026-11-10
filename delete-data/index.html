@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="tr" data-title-tr="Verilerini sil · SpellVo" data-title-en="Delete your data · SpellVo">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#07051a" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" hreflang="tr" href="https://spellvo.app/delete-data/?lang=tr" />
+    <link rel="alternate" hreflang="en" href="https://spellvo.app/delete-data/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://spellvo.app/delete-data/" />
+    <script>
+      // The page's language before the first paint (site/src/site.ts): ?lang=, the visitor's choice, the browser.
+      (function () {
+        var d = document.documentElement, q = new URLSearchParams(location.search).get('lang'), s = null;
+        try { s = localStorage.getItem('spellvo.site.lang'); } catch (e) {}
+        var l = q === 'tr' || q === 'en' ? q : s === 'tr' || s === 'en' ? s : /^tr/i.test(navigator.language || '') ? 'tr' : 'en';
+        d.lang = l;
+        d.setAttribute('data-lang', l);
+        var t = d.getAttribute('data-title-' + l);
+        if (t) document.title = t;
+      })();
+    </script>
+    <!-- The first paint: the loading screen's sky, never a white page. -->
+    <style>
+      html, body { background: #07051a; color: #fff; }
+    </style>
+    <title>Verilerini sil · Delete your data · SpellVo</title>
+    <meta name="description" content="SpellVo verilerini silme: oyun verileri, analitik, satın almalar ve reklam kimliği. · How to delete your SpellVo data: game data, analytics, purchases and the advertising ID." />
+    <link rel="canonical" href="https://spellvo.app/delete-data/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="SpellVo" />
+    <meta property="og:url" content="https://spellvo.app/delete-data/" />
+    <meta property="og:title" content="Verilerini sil · Delete your data · SpellVo" />
+    <meta property="og:description" content="Oyun verilerin cihazında; analitik verilerinin silinmesini e-postayla iste. · Your game data is on your device; ask by email to delete your analytics data." />
+    <meta property="og:image" content="https://spellvo.app/og/home-tr.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="/assets/site-Bx5Te4Mx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/site-yPwelULE.css">
+  </head>
+  <body>
+    <a class="skip" href="#main"><span lang="tr">İçeriğe geç</span><span lang="en">Skip to content</span></a>
+    <header class="wrap top">
+      <a class="brand" href="/" aria-label="SpellVo"><span class="tile tile--correct" aria-hidden="true">S</span><span class="tile tile--present" aria-hidden="true">p</span><span class="tile " aria-hidden="true">e</span><span class="tile tile--correct" aria-hidden="true">l</span><span class="tile tile--present" aria-hidden="true">l</span><span class="tile " aria-hidden="true">V</span><span class="tile tile--correct" aria-hidden="true">o</span></a>
+      <nav class="top__links" aria-label="SpellVo">
+        <a class="top__link" href="/support/"><span lang="tr">Destek</span><span lang="en">Support</span></a>
+        <a class="top__link" href="/privacy/"><span lang="tr">Gizlilik</span><span lang="en">Privacy</span></a>
+        <div class="langs" role="group" aria-label="Dil / Language">
+          <button type="button" data-set-lang="tr" aria-pressed="false" title="Türkçe">TR</button>
+          <button type="button" data-set-lang="en" aria-pressed="false" title="English">EN</button>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="doc">
+      <!--
+        The data deletion page for Google Play's Data safety form (docs/SITE.md "Data deletion page",
+        docs/PRIVACY_OPS.md for how requests are handled). Keep it in step with the privacy policy
+        (site/privacy/index.html, sections 2, 6, 7, 8 and 13) and docs/PLAY_DATA_SAFETY.md. The analytics
+        retention below is a placeholder (data-placeholder) until the owner confirms the Google Analytics
+        setting; the site build warns while it is there.
+      -->
+
+      <!-- ===================== Türkçe ===================== -->
+      <article lang="tr">
+        <h1>SpellVo verilerini sil</h1>
+        <p class="meta">Uygulama: SpellVo (Android) · Geliştirici: Ergin Şen · <a href="/privacy/">Gizlilik politikası</a></p>
+
+        <div class="card summary deletion">
+          <h2>Silme adımları</h2>
+          <ol>
+            <li><strong>Oyun verilerin</strong> (skorlar, Altın Pati, eşyalar, seriler, ayarlar) yalnızca telefonunda durur. Silmek için telefonunda <strong>Ayarlar → Uygulamalar → SpellVo → Depolama → Verileri temizle</strong>’ye dokun ya da uygulamayı kaldır. Hemen silinir.</li>
+            <li><strong>Analitik verilerinin silinmesini istemek için</strong> uygulamada <strong>Ayarlar → Gizlilik → Analitik kimliği</strong>’ni kopyala ve “Analitik verilerimi sil” konulu bir e-postayla <a href="mailto:hello@spellvo.app?subject=Analitik%20verilerimi%20sil&amp;body=Analitik%20kimli%C4%9Fi%3A%20">hello@spellvo.app</a> adresine gönder. Silme talebini en geç 30 gün içinde Google’a iletir, sana yazarız.</li>
+            <li><strong>Reklam kimliğini sıfırlamak ya da silmek için</strong> telefonunda <strong>Ayarlar → Gizlilik → Reklamlar</strong>’a git.</li>
+          </ol>
+          <p><a class="button" href="mailto:hello@spellvo.app?subject=Analitik%20verilerimi%20sil&amp;body=Analitik%20kimli%C4%9Fi%3A%20">Analitik verilerimin silinmesini iste</a></p>
+        </div>
+
+        <h2 id="tr-cihaz">1. Oyun verilerin: telefonunda</h2>
+        <p>SpellVo’da hesap yok. Ayarların, skorların, Günün Yarışması sonuçların ve serin, canların, jokerlerin ve diğer eşyaların, Altın Patilerin, oynadığın meydan okumalar ve takma adın, satın aldığın kalıcı ürünler (“Reklamları kaldır” gibi) ve analitik tercihin yalnızca telefonunda, uygulamanın kendi depolama alanında saklanır. Bunlar bize gönderilmez; biz göremeyiz.</p>
+        <p><strong>Nasıl silinir:</strong> telefonunda <strong>Ayarlar → Uygulamalar → SpellVo → Depolama → Verileri temizle</strong> (menü adları telefona göre biraz değişebilir) ya da uygulamayı kaldır. Silme hemen olur ve geri alınamaz. Android yedeklemesi açıksa Android bu verileri Google hesabındaki yedeğe de koymuş olabilir; o yedeği Google hesabının yedekleme ayarlarından silebilirsin.</p>
+        <p>Bir meydan okumayı tarayıcıda oynadıysan, tercihlerin ve takma adın o tarayıcının yerel depolama alanındadır; tarayıcının spellvo.app site verilerini temizleyerek silebilirsin.</p>
+
+        <h2 id="tr-satin">2. Satın almalar: Google Play’de</h2>
+        <p>Satın almalar Google Play Faturalandırma ile yapılır. Satın alma kayıtların (sipariş geçmişin) Google hesabına bağlı olarak Google Play’de tutulur; ödeme bilgilerini biz hiç görmeyiz. <strong>Uygulamayı kaldırmak ya da verilerini temizlemek satın almalarını silmez.</strong> Uygulamayı yeniden kurduğunda “Reklamları kaldır”ı <strong>Mağaza → Satın alımları geri yükle</strong> ile geri alırsın. Kullanılıp biten paketler (joker, Ek Süre, Sözlük, can) cihazdaki oyun verisiyle birlikte silinir. Google Play’deki sipariş geçmişi Google’ın kendi kurallarına (yasal saklama süreleri dâhil) tabidir; Google hesabının ayarlarından yönetilir.</p>
+
+        <h2 id="tr-analitik">3. Analitik (Google Firebase Analytics)</h2>
+        <p>Uygulama, analitik açıkken Google Analytics’e oyun olaylarını rastgele bir <strong>uygulama örneği kimliğiyle</strong> gönderir (adın, e-postan ya da yazdığın kelimeler olmadan; ayrıntılar <a href="/privacy/#tr-analitik">gizlilik politikasının 8. bölümünde</a>). Analitiğe izin verdiysen, yaptığın satın almaların ürünü, fiyatı ve para birimi de bu olaylara dâhildir.</p>
+        <p><strong>Kapatmak için:</strong> uygulamada <strong>Ayarlar → Gizlilik → Analitik</strong> anahtarını kapat. Kapalıyken hiçbir olay gönderilmez; daha önce gönderilenler aşağıdaki saklama süresi boyunca kalır ya da sen istersen silinir.</p>
+        <p><strong>Silinmesini istemek için:</strong></p>
+        <ol>
+          <li>Uygulamada <strong>Ayarlar → Gizlilik → Analitik kimliği</strong>’ne git ve <strong>Kopyala</strong>’ya dokun.</li>
+          <li>Kimliği <a href="mailto:hello@spellvo.app?subject=Analitik%20verilerimi%20sil&amp;body=Analitik%20kimli%C4%9Fi%3A%20">hello@spellvo.app</a> adresine “Analitik verilerimi sil” konulu bir e-postayla gönder.</li>
+          <li>Talebini en geç <strong>30 gün</strong> içinde Google Analytics’in kullanıcı verisi silme aracıyla Google’a iletir ve sana e-postayla bildiririz. Google bu kimliğe bağlı tüm olayları raporlardan yaklaşık bir gün içinde kaldırır ve sunucularından en geç 63 gün içinde kalıcı olarak siler.</li>
+        </ol>
+        <p>Analytics’te adın ya da e-postan olmadığı için verilerini yalnızca bu kimlikle bulabiliriz. Kimlik uygulama yeniden kurulunca değişir; uygulamayı kaldırmadan önce kopyalamanı öneririz. Analitik baştan beri kapalıysa silinecek bir şey yoktur.</p>
+        <p><strong>Saklama süresi:</strong> silme istemezsen olay verileri Google Analytics’te <span data-placeholder="ga-retention">[saklama süresi doğrulanacak]</span> saklanır, sonra otomatik silinir (Google Analytics bunu en çok 14 ay tutar). Kimlik bilgisi içermeyen toplu istatistikler (örneğin günlük oyun sayısı) bundan etkilenmez.</p>
+
+        <h2 id="tr-reklam">4. Reklamlar (Google AdMob)</h2>
+        <p>Reklamları Google AdMob gösterir; reklam kimliği gibi reklam verilerini Google işler ve saklar (<a href="/privacy/#tr-reklam">gizlilik politikasının 6. bölümü</a>). Bu verileri biz tutmayız, ama şunları yapabilirsin:</p>
+        <ul>
+          <li><strong>Reklam kimliğini sil ya da sıfırla:</strong> telefonunda <strong>Ayarlar → Gizlilik → Reklamlar → Reklam kimliğini sil</strong> (ya da <strong>Reklam kimliğini sıfırla</strong>). Eski Android sürümlerinde: <strong>Ayarlar → Google → Reklamlar</strong>. Silinen kimlik yerine uygulamalar yalnızca sıfırlar görür.</li>
+          <li><strong>Kişiselleştirilmiş reklam iznin:</strong> Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de uygulamada <strong>Ayarlar → Gizlilik → Gizlilik seçenekleri</strong>’nden değiştir.</li>
+          <li><strong>Google’ın araçları:</strong> <a href="https://myadcenter.google.com/" rel="noopener">Reklam Merkezim</a>, <a href="https://myaccount.google.com/data-and-privacy" rel="noopener">Google hesabı: Veri ve gizlilik</a>, <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Google, hizmetlerini kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a>, <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a>.</li>
+        </ul>
+
+        <h2 id="tr-ozet">5. Ne silinir, ne kalır</h2>
+        <ul>
+          <li><strong>Oyun verilerin:</strong> verileri temizleyince ya da uygulamayı kaldırınca hemen ve tamamen silinir; bizde kopyası yoktur.</li>
+          <li><strong>Analitik verilerin:</strong> isteğin üzerine silinir (30 gün içinde iletiriz, Google en geç 63 günde siler); istemezsen <span data-placeholder="ga-retention">[saklama süresi doğrulanacak]</span> sonra kendiliğinden silinir.</li>
+          <li><strong>Satın almalar:</strong> Google Play’de Google hesabına bağlı kalır; “Reklamları kaldır” geri yüklenebilir.</li>
+          <li><strong>Reklam verileri:</strong> Google’ın kendi saklama kurallarına tabidir; reklam kimliğini telefonundan silebilirsin.</li>
+          <li><strong>Bize yazdığın e-posta:</strong> yalnızca isteğini yerine getirmek için kullanılır ve iş bitince gerekmedikçe saklanmaz.</li>
+        </ul>
+        <p>Sorun olursa: <a href="mailto:hello@spellvo.app">hello@spellvo.app</a>. Tüm ayrıntılar <a href="/privacy/">gizlilik politikasında</a>.</p>
+      </article>
+
+      <!-- ===================== English ===================== -->
+      <article lang="en">
+        <h1>Delete your SpellVo data</h1>
+        <p class="meta">App: SpellVo (Android) · Developer: Ergin Şen · <a href="/privacy/">Privacy policy</a></p>
+
+        <div class="card summary deletion">
+          <h2>How to delete your data</h2>
+          <ol>
+            <li><strong>Your game data</strong> (scores, Golden Paws, items, streaks, settings) is only on your phone. To delete it, go to your phone’s <strong>Settings → Apps → SpellVo → Storage → Clear data</strong>, or uninstall the app. It is deleted at once.</li>
+            <li><strong>To have your analytics data deleted,</strong> copy the <strong>Settings → Privacy → Analytics ID</strong> in the app and email it to <a href="mailto:hello@spellvo.app?subject=Delete%20my%20analytics%20data&amp;body=Analytics%20ID%3A%20">hello@spellvo.app</a> with the subject “Delete my analytics data”. We pass your request to Google within 30 days at the latest and email you.</li>
+            <li><strong>To reset or delete your advertising ID,</strong> go to your phone’s <strong>Settings → Privacy → Ads</strong>.</li>
+          </ol>
+          <p><a class="button" href="mailto:hello@spellvo.app?subject=Delete%20my%20analytics%20data&amp;body=Analytics%20ID%3A%20">Request deletion of my analytics data</a></p>
+        </div>
+
+        <h2 id="en-device">1. Your game data: on your phone</h2>
+        <p>SpellVo has no accounts. Your settings, scores, Daily Challenge results and streak, lives, jokers and other items, Golden Paws, the challenges you played and your nickname, what you own for good (such as “Remove ads”) and your analytics choice are kept only on your phone, in the app’s own storage. None of it is sent to us, and we cannot see it.</p>
+        <p><strong>How to delete it:</strong> your phone’s <strong>Settings → Apps → SpellVo → Storage → Clear data</strong> (the menu names vary a little between phones), or uninstall the app. It is deleted at once and can’t be undone. If Android backup is on, Android may also have put this data in the backup in your Google account; you can delete that backup in your Google account’s backup settings.</p>
+        <p>If you played a challenge in your browser, your choices and nickname are in that browser’s local storage; clear the browser’s site data for spellvo.app to delete them.</p>
+
+        <h2 id="en-purchases">2. Purchases: kept by Google Play</h2>
+        <p>Purchases are made with Google Play Billing. Your purchase records (order history) are kept by Google Play under your Google account; we never see your payment details. <strong>Uninstalling the app or clearing its data does not delete your purchases.</strong> After reinstalling, <strong>Shop → Restore purchases</strong> brings “Remove ads” back. Packs you have used up (jokers, Extra Time, Wordbooks, lives) are deleted with the game data on your device. Your order history in Google Play follows Google’s own rules (including legal retention periods) and is managed in your Google account.</p>
+
+        <h2 id="en-analytics">3. Analytics (Google Firebase Analytics)</h2>
+        <p>While analytics is on, the app sends game events to Google Analytics with a random <strong>app instance ID</strong> (no name, email or the words you type; details in <a href="/privacy/#en-analytics">section 8 of the privacy policy</a>). If you allowed analytics, the product, price and currency of your purchases are part of these events too.</p>
+        <p><strong>To turn it off:</strong> switch off <strong>Settings → Privacy → Analytics</strong> in the app. While it is off, no event is sent; what was sent before stays for the retention period below, or until you ask us to delete it.</p>
+        <p><strong>To have it deleted:</strong></p>
+        <ol>
+          <li>In the app, go to <strong>Settings → Privacy → Analytics ID</strong> and tap <strong>Copy</strong>.</li>
+          <li>Email the ID to <a href="mailto:hello@spellvo.app?subject=Delete%20my%20analytics%20data&amp;body=Analytics%20ID%3A%20">hello@spellvo.app</a> with the subject “Delete my analytics data”.</li>
+          <li>Within <strong>30 days</strong> at the latest we submit your request to Google with Google Analytics’ user data deletion tool and confirm by email. Google removes every event linked to that ID from its reports within about a day and deletes it permanently from its servers within 63 days.</li>
+        </ol>
+        <p>As Analytics holds no name or email, the ID is the only way we can find your data. The ID changes when the app is reinstalled, so copy it before you uninstall. If analytics was off all along, there is nothing to delete.</p>
+        <p><strong>Retention:</strong> if you don’t ask for deletion, event data is kept in Google Analytics for <span data-placeholder="ga-retention">[retention to be confirmed]</span> and then deleted automatically (Google Analytics keeps it for 14 months at most). Aggregated statistics with no identifier (such as games played per day) are not affected.</p>
+
+        <h2 id="en-ads">4. Ads (Google AdMob)</h2>
+        <p>Ads are shown by Google AdMob; ad data such as the advertising ID is processed and kept by Google (<a href="/privacy/#en-ads">section 6 of the privacy policy</a>). We don’t hold it, but you can:</p>
+        <ul>
+          <li><strong>Delete or reset your advertising ID:</strong> your phone’s <strong>Settings → Privacy → Ads → Delete advertising ID</strong> (or <strong>Reset advertising ID</strong>). On older Android versions: <strong>Settings → Google → Ads</strong>. Once it is deleted, apps see only zeros in its place.</li>
+          <li><strong>Change your consent to personalized ads:</strong> in the European Economic Area, the United Kingdom and Switzerland, in the app under <strong>Settings → Privacy → Privacy options</strong>.</li>
+          <li><strong>Use Google’s tools:</strong> <a href="https://myadcenter.google.com/" rel="noopener">My Ad Center</a>, <a href="https://myaccount.google.com/data-and-privacy" rel="noopener">Google Account: Data &amp; privacy</a>, <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use our services</a>, <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+        </ul>
+
+        <h2 id="en-summary">5. What is deleted and what is kept</h2>
+        <ul>
+          <li><strong>Your game data:</strong> deleted at once and completely when you clear the app’s data or uninstall it; we have no copy.</li>
+          <li><strong>Your analytics data:</strong> deleted on request (we submit it within 30 days, Google deletes it within 63 days); otherwise deleted automatically after <span data-placeholder="ga-retention">[retention to be confirmed]</span>.</li>
+          <li><strong>Purchases:</strong> kept by Google Play under your Google account; “Remove ads” can be restored.</li>
+          <li><strong>Ad data:</strong> kept under Google’s own retention rules; you can delete your advertising ID on your phone.</li>
+          <li><strong>Your email to us:</strong> used only to carry out your request, and not kept longer than needed once it is done.</li>
+        </ul>
+        <p>Questions: <a href="mailto:hello@spellvo.app">hello@spellvo.app</a>. The full details are in the <a href="/privacy/">privacy policy</a>.</p>
+      </article>
+    </main>
+    <footer class="foot">
+      <div class="wrap">
+        <nav aria-label="SpellVo">
+          <a href="/"><span lang="tr">Ana sayfa</span><span lang="en">Home</span></a>
+          <a href="/support/"><span lang="tr">Destek</span><span lang="en">Support</span></a>
+          <a href="/privacy/"><span lang="tr">Gizlilik politikası</span><span lang="en">Privacy policy</span></a>
+          <a href="/delete-data/"><span lang="tr">Verilerini sil</span><span lang="en">Delete your data</span></a>
+          <a href="/licenses/"><span lang="tr">Lisanslar</span><span lang="en">Licenses</span></a>
+          <a class="mail" href="mailto:hello@spellvo.app">hello@spellvo.app</a>
+        </nav>
+        <p>© 2026 SpellVo. <span lang="tr">Google Play, Google LLC’nin ticari markasıdır.</span><span lang="en">Google Play is a trademark of Google LLC.</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
