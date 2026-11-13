@@ -61,8 +61,8 @@
         The data deletion page for Google Play's Data safety form (docs/SITE.md "Data deletion page",
         docs/PRIVACY_OPS.md for how requests are handled). Keep it in step with the privacy policy
         (site/privacy/index.html, sections 2, 6, 7, 8 and 13) and docs/PLAY_DATA_SAFETY.md. The analytics
-        retention below is a placeholder (data-placeholder) until the owner confirms the Google Analytics
-        setting; the site build warns while it is there.
+        retention (14 months for event data; 14 months after the last activity for user-level data, "Reset
+        on new activity" on) was set in Google Analytics on 2026-11-10 (docs/PRIVACY_OPS.md "The retention setting").
       -->
 
       <!-- ===================== Türkçe ===================== -->
@@ -98,7 +98,7 @@
           <li>Talebini en geç <strong>30 gün</strong> içinde Google Analytics’in kullanıcı verisi silme aracıyla Google’a iletir ve sana e-postayla bildiririz. Google bu kimliğe bağlı tüm olayları raporlardan yaklaşık bir gün içinde kaldırır ve sunucularından en geç 63 gün içinde kalıcı olarak siler.</li>
         </ol>
         <p>Analytics’te adın ya da e-postan olmadığı için verilerini yalnızca bu kimlikle bulabiliriz. Kimlik uygulama yeniden kurulunca değişir; uygulamayı kaldırmadan önce kopyalamanı öneririz. Analitik baştan beri kapalıysa silinecek bir şey yoktur.</p>
-        <p><strong>Saklama süresi:</strong> silme istemezsen olay verileri Google Analytics’te <span data-placeholder="ga-retention">[saklama süresi doğrulanacak]</span> saklanır, sonra otomatik silinir (Google Analytics bunu en çok 14 ay tutar). Kimlik bilgisi içermeyen toplu istatistikler (örneğin günlük oyun sayısı) bundan etkilenmez.</p>
+        <p><strong>Saklama süresi:</strong> silme istemezsen olay verileri Google Analytics’te 14 ay saklanır, sonra otomatik silinir. Kullanıcı düzeyindeki veriler ise uygulamadaki son etkinliğinden sonra 14 ay saklanır; uygulamayı yeniden kullanırsan bu süre baştan başlar. Kimlik bilgisi içermeyen toplu istatistikler (örneğin günlük oyun sayısı) bundan etkilenmez.</p>
 
         <h2 id="tr-reklam">4. Reklamlar (Google AdMob)</h2>
         <p>Reklamları Google AdMob gösterir; reklam kimliği gibi reklam verilerini Google işler ve saklar (<a href="/privacy/#tr-reklam">gizlilik politikasının 6. bölümü</a>). Bu verileri biz tutmayız, ama şunları yapabilirsin:</p>
@@ -111,7 +111,7 @@
         <h2 id="tr-ozet">5. Ne silinir, ne kalır</h2>
         <ul>
           <li><strong>Oyun verilerin:</strong> verileri temizleyince ya da uygulamayı kaldırınca hemen ve tamamen silinir; bizde kopyası yoktur.</li>
-          <li><strong>Analitik verilerin:</strong> isteğin üzerine silinir (30 gün içinde iletiriz, Google en geç 63 günde siler); istemezsen <span data-placeholder="ga-retention">[saklama süresi doğrulanacak]</span> sonra kendiliğinden silinir.</li>
+          <li><strong>Analitik verilerin:</strong> isteğin üzerine silinir (30 gün içinde iletiriz, Google en geç 63 günde siler); istemezsen olay verileri 14 ay, kullanıcı düzeyindeki veriler son etkinliğinden sonra 14 ay geçince kendiliğinden silinir.</li>
           <li><strong>Satın almalar:</strong> Google Play’de Google hesabına bağlı kalır; “Reklamları kaldır” geri yüklenebilir.</li>
           <li><strong>Reklam verileri:</strong> Google’ın kendi saklama kurallarına tabidir; reklam kimliğini telefonundan silebilirsin.</li>
           <li><strong>Bize yazdığın e-posta:</strong> yalnızca isteğini yerine getirmek için kullanılır ve iş bitince gerekmedikçe saklanmaz.</li>
@@ -152,7 +152,7 @@
           <li>Within <strong>30 days</strong> at the latest we submit your request to Google with Google Analytics’ user data deletion tool and confirm by email. Google removes every event linked to that ID from its reports within about a day and deletes it permanently from its servers within 63 days.</li>
         </ol>
         <p>As Analytics holds no name or email, the ID is the only way we can find your data. The ID changes when the app is reinstalled, so copy it before you uninstall. If analytics was off all along, there is nothing to delete.</p>
-        <p><strong>Retention:</strong> if you don’t ask for deletion, event data is kept in Google Analytics for <span data-placeholder="ga-retention">[retention to be confirmed]</span> and then deleted automatically (Google Analytics keeps it for 14 months at most). Aggregated statistics with no identifier (such as games played per day) are not affected.</p>
+        <p><strong>Retention:</strong> if you don’t ask for deletion, event data is kept in Google Analytics for 14 months and then deleted automatically. User-level data is kept for 14 months after your last activity in the app; if you use the app again, that period starts over. Aggregated statistics with no identifier (such as games played per day) are not affected.</p>
 
         <h2 id="en-ads">4. Ads (Google AdMob)</h2>
         <p>Ads are shown by Google AdMob; ad data such as the advertising ID is processed and kept by Google (<a href="/privacy/#en-ads">section 6 of the privacy policy</a>). We don’t hold it, but you can:</p>
@@ -165,7 +165,7 @@
         <h2 id="en-summary">5. What is deleted and what is kept</h2>
         <ul>
           <li><strong>Your game data:</strong> deleted at once and completely when you clear the app’s data or uninstall it; we have no copy.</li>
-          <li><strong>Your analytics data:</strong> deleted on request (we submit it within 30 days, Google deletes it within 63 days); otherwise deleted automatically after <span data-placeholder="ga-retention">[retention to be confirmed]</span>.</li>
+          <li><strong>Your analytics data:</strong> deleted on request (we submit it within 30 days, Google deletes it within 63 days); otherwise deleted automatically: event data after 14 months, user-level data 14 months after your last activity.</li>
           <li><strong>Purchases:</strong> kept by Google Play under your Google account; “Remove ads” can be restored.</li>
           <li><strong>Ad data:</strong> kept under Google’s own retention rules; you can delete your advertising ID on your phone.</li>
           <li><strong>Your email to us:</strong> used only to carry out your request, and not kept longer than needed once it is done.</li>
