@@ -3,8 +3,8 @@
   "short_name": "SpellVo",
   "start_url": "/",
   "display": "browser",
-  "background_color": "#07051a",
-  "theme_color": "#07051a",
+  "background_color": "#4d63c4",
+  "theme_color": "#6553c4",
   "icons": [
     {
       "src": "/icons/icon-192.png",
